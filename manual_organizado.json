@@ -1,0 +1,310 @@
+[
+    {
+        "role": "system",
+        "content": "You are participating in a conversational interaction."
+    },
+    {
+        "role": "user",
+        "content": "¿Que es el aprendizaje cooperativo?"
+    },
+    {
+        "role": "assistant",
+        "content": "El aprendizaje cooperativo permite que el alumno desarrolle"
+    },
+    {
+        "role": "user",
+        "content": "¿Que es la metodologia Amco?"
+    },
+    {
+        "role": "assistant",
+        "content": "Un alumno que no es feliz no puede aprender; por ello,"
+    },
+    {
+        "role": "user",
+        "content": "Los docentes para Amco"
+    },
+    {
+        "role": "assistant",
+        "content": "Los docentes son el factor más importante para el éito del"
+    },
+    {
+        "role": "user",
+        "content": "¿Como es el aprendizaje en los alumnos?"
+    },
+    {
+        "role": "assistant",
+        "content": "Cada alumno es diferente y aprende de manera distinta, por lo"
+    },
+    {
+        "role": "user",
+        "content": "¿Como es aprender?"
+    },
+    {
+        "role": "assistant",
+        "content": "¡Aprender es divertido!"
+    },
+    {
+        "role": "user",
+        "content": "Habilidades digitales"
+    },
+    {
+        "role": "assistant",
+        "content": "Entender, aplicar, analizar, evaluar, crear."
+    },
+    {
+        "role": "user",
+        "content": "Inteligencias múltiples."
+    },
+    {
+        "role": "assistant",
+        "content": "Verbal-lingustica, lógico-matemática, kinestésica, visual-"
+    },
+    {
+        "role": "user",
+        "content": "Mapas mentales"
+    },
+    {
+        "role": "assistant",
+        "content": "Creatividad, pensamiento critico, retención."
+    },
+    {
+        "role": "user",
+        "content": "Green project"
+    },
+    {
+        "role": "assistant",
+        "content": "Ecologia, enfoque social, cuidado del planeta, solucion de"
+    },
+    {
+        "role": "user",
+        "content": "Inteligencia emocional"
+    },
+    {
+        "role": "assistant",
+        "content": "Autocontrol, empatia, motivación, autoconocimiento,"
+    },
+    {
+        "role": "user",
+        "content": "Sentirse amado"
+    },
+    {
+        "role": "assistant",
+        "content": "Padres: Trabaja en equipo, soporte, satisfacción, menoss"
+    },
+    {
+        "role": "user",
+        "content": "Filosofia Amco"
+    },
+    {
+        "role": "assistant",
+        "content": "Inteligencias múltiples, mapas mentales, inteligencia"
+    },
+    {
+        "role": "user",
+        "content": "Camino al aprendizaje digital"
+    },
+    {
+        "role": "assistant",
+        "content": "La plataforma Aluzo contiene cientos de actividades digitales"
+    },
+    {
+        "role": "user",
+        "content": "Bloques  de contenido."
+    },
+    {
+        "role": "assistant",
+        "content": "Cada bloque está compuesto por dos situaciones didácticas que"
+    },
+    {
+        "role": "user",
+        "content": "Bloque 1"
+    },
+    {
+        "role": "assistant",
+        "content": "Agosto, septiembre y octubre."
+    },
+    {
+        "role": "user",
+        "content": "Bloque 2"
+    },
+    {
+        "role": "assistant",
+        "content": "Noviembre y diciembre."
+    },
+    {
+        "role": "user",
+        "content": "Bloque 3"
+    },
+    {
+        "role": "assistant",
+        "content": "Enero y febrero."
+    },
+    {
+        "role": "user",
+        "content": "Bloque 4"
+    },
+    {
+        "role": "assistant",
+        "content": "Marzo y abril."
+    },
+    {
+        "role": "user",
+        "content": "Bloque 5"
+    },
+    {
+        "role": "assistant",
+        "content": "Mayo y junio."
+    },
+    {
+        "role": "user",
+        "content": "Propositos fundamentales"
+    },
+    {
+        "role": "assistant",
+        "content": "En Amco educamos niños para el siglo XXI, formándolos para ser"
+    },
+    {
+        "role": "user",
+        "content": "Elementos del Programa"
+    },
+    {
+        "role": "assistant",
+        "content": "Enlace completa su programa con varios elementos que permiten"
+    },
+    {
+        "role": "user",
+        "content": "Iconografía"
+    },
+    {
+        "role": "assistant",
+        "content": "Cuentas con el apoyo de la iconografia, que te permite navegar"
+    },
+    {
+        "role": "user",
+        "content": "Mi diario emocional"
+    },
+    {
+        "role": "assistant",
+        "content": "Está enfocado en evaluar el desarrollo emocional del alumno en"
+    },
+    {
+        "role": "user",
+        "content": "Calendario-Agenda de tareas"
+    },
+    {
+        "role": "assistant",
+        "content": "para fortalecer la responsabilidad en los alumnos, el programa"
+    },
+    {
+        "role": "user",
+        "content": "Lenguaje y comunicación"
+    },
+    {
+        "role": "assistant",
+        "content": "las secciones que integran el campo de Lenguaje y comunicación"
+    },
+    {
+        "role": "user",
+        "content": "Lectura"
+    },
+    {
+        "role": "assistant",
+        "content": "La taxonomía de Robert Marzano incorpora un amplio rango de"
+    },
+    {
+        "role": "user",
+        "content": "Español"
+    },
+    {
+        "role": "assistant",
+        "content": "Nuestra propuesta fomenta a los alumnos a trabajar con los"
+    },
+    {
+        "role": "user",
+        "content": "Vocabulario"
+    },
+    {
+        "role": "assistant",
+        "content": "En esta sección se encuentra el banco de palabras, con"
+    },
+    {
+        "role": "user",
+        "content": "Bnaco de palabras"
+    },
+    {
+        "role": "assistant",
+        "content": "Practicará sus habilidades de comunicación escrita, mejorando"
+    },
+    {
+        "role": "user",
+        "content": "Guias del maestro"
+    },
+    {
+        "role": "assistant",
+        "content": "El docente cuenta con una guia del maestro de cada uno de los"
+    },
+    {
+        "role": "user",
+        "content": "Guías temáticas"
+    },
+    {
+        "role": "assistant",
+        "content": "Permite al docente reconocer el trabajo de todo el año en cada"
+    },
+    {
+        "role": "user",
+        "content": "Secuencias de proyectos NEM."
+    },
+    {
+        "role": "assistant",
+        "content": "Proyectos interrelacionados entre los contenidos Amco y el"
+    },
+    {
+        "role": "user",
+        "content": "Evaluaciones"
+    },
+    {
+        "role": "assistant",
+        "content": "Evaluaciones modulares su formato le permite arma la propuesta"
+    },
+    {
+        "role": "user",
+        "content": "Evaluacion planea"
+    },
+    {
+        "role": "assistant",
+        "content": "Para tercer grado se cuenta con una evaluación que permite al"
+    },
+    {
+        "role": "user",
+        "content": "Evaluaciones digitales"
+    },
+    {
+        "role": "assistant",
+        "content": "Cuentas con un banco de exámenes que hemos preparado para que"
+    },
+    {
+        "role": "user",
+        "content": "Libreria digital"
+    },
+    {
+        "role": "assistant",
+        "content": "Cómoda estanteria en linea donde los alumnos y docentes"
+    }, 
+    {
+        "role": "user",
+        "content": "¿Que es robocode?"
+    }, 
+    {
+        "role": "assistant",
+        "content": "Programa encargado de fomentar la robotica en alumnos"
+    }, 
+    {
+        "role": "user", 
+        "content": "¿Que es Impact?"
+    }, 
+    {
+        "role": "assistant", 
+        "content": "Programa de Amco capaz de generar planeaciones para ayudar a maestros"
+    }
+]
