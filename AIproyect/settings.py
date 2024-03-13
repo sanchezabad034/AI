@@ -24,6 +24,7 @@ environ.Env.read_env(env_file=os.path.join(BASE_DIR, '.env'))
 
 DEBUG = env.bool(('DEBUG'))
 
+ALLOWED_HOSTS = ['*']
 
 
 # Quick-start development settings - unsuitable for production
@@ -35,7 +36,6 @@ SECRET_KEY = 'django-insecure-ssi=9zh_!5urgp546kc9lx2_j5f)92(b*e0jt_bfhbhc-%a6=_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -59,9 +59,6 @@ REST_FRAMEWORK = {
     )
 }
 
-CORS_ORIGIN_WHITELIST = (
-  'http://localhost:8000',
-)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -88,7 +85,6 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_METHODS = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE']
 CORS_ALLOW_HEADERS = ['*']
