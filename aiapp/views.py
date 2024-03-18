@@ -1,12 +1,12 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .serializer import generate_text_and_image  
+from .serializer import generateText  
 import openai
 import os
 import requests
 from django.http import JsonResponse
 from rest_framework.parsers import MultiPartParser, FormParser
-from .serializer import transcribe_audio_with_whisper, generate_text_via_api
+from .serializer import whiperFunction, generateText
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
@@ -15,7 +15,7 @@ class GenerateTextImageView(APIView):
         prompt = request.data.get('prompt')
 
         if prompt:
-            text_generated, image_url = generate_text_and_image(prompt)
+            text_generated, image_url = generateText(prompt)
             return JsonResponse({
                 'text_generated': text_generated,
                 'image_url': image_url
@@ -31,8 +31,8 @@ class AudioGenerator(APIView):
     def post(self, request, *args, **kwargs):
         if 'audio_file' in request.FILES:
             audio_file = request.FILES['audio_file']
-            transcribed_text = transcribe_audio_with_whisper(audio_file.temporary_file_path())
-            response_text = generate_text_via_api(transcribed_text)
+            transcribed_text = Whisper(audio_file.temporary_file_path())
+            response_text = generateText(transcribed_text)
             return JsonResponse({'transcribed_text': transcribed_text, 'response': response_text})
         else:
             return JsonResponse({'error': 'No audio file provided'}, status=400)
