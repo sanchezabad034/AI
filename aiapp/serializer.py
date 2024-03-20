@@ -8,19 +8,27 @@ def generateImgtxt(prompt):
     text_generated, image_url = None, None
     api_key = os.getenv('OPENAI_API_KEY')
     
-    image_keywords = ['imagenes', 'fotos', 'ilustraciones', 'images', 'pictures', 'illustrations', 'imagens', 'fotografias', 'ilustrações']
+    multiImagekeyword = ['imagenes', 'fotos', 'ilustraciones', 'images', 'pictures', 'illustrations', 'imagens', 'fotografias', 'ilustrações']
+    imageKeyword = ['imagen', 'foto', 'ilustracion','image', 'photo', 'illustration','imagem', 'foto', 'ilustração', 'imagem', 'foto', 'ilustração']
     
     faqs = ragFaq()
     text_generated = findRag(prompt, faqs)
     
-    if not text_generated:
+    if not text_generated: 
         text_generated = generateText(prompt, api_key)
+        
+    multiImage = any(keyboard in prompt.lower() for keyboard in multiImagekeyword)
+    image = any(keyboard in prompt.lower() for keyboard in imageKeyword)
     
-    if any(keyword in prompt.lower() for keyword in image_keywords):
-        image_url = generateMultipleImages(text_generated if text_generated else prompt, api_key, num_images=4)
-    else:
-        image_url = generateImage(text_generated if text_generated else prompt, api_key, num_images=1)
-    
+    if multiImage or image: 
+        if multiImage: 
+            image_url = generateMultipleImages(prompt, api_key, num_images=4)
+        elif image: 
+            image_url = generateImage(prompt,api_key)
+            
+        else: 
+            image_url = None
+            
     return text_generated, image_url
 
 #In this function we generate the text 
@@ -48,7 +56,7 @@ def generateText(prompt, api_key):
     
     
 #In this function we generate the images whit DALLE
-def generateImage(prompt, api_key, num_images=4):
+def generateImage(prompt, api_key):
     headers = {
         'Authorization': f'Bearer {api_key}',
         'Content-Type': 'application/json',
@@ -57,7 +65,7 @@ def generateImage(prompt, api_key, num_images=4):
     data = {
         'model': 'dall-e-3',
         'prompt': prompt,
-        'n': num_images, 
+        'n': 1, 
         'size': '1024x1024',
     }
     response = requests.post(url, headers=headers, json=data)
@@ -80,13 +88,6 @@ def findRag(prompt, faqs):
             if i + 1 < len(faqs) and faqs[i + 1]['role'] == 'assistant':
                 return faqs[i + 1]['content']
     return None
-
-
-
-def whiperFunction(audio_file_path):
-    model = whisper.load_model("whisper-1")  
-    result = model.transcribe(audio_file_path)
-    return result["text"]
 
 #Generate multiple imgaes work making different images 
 def generateMultipleImages(prompt, api_key, num_images=4):
